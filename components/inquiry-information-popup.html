@@ -1,0 +1,69 @@
+<div class="modal fade" id="inquiryModal1" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="inquiryModalLabel1">Product Availability Inquiry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p><strong>Customer:</strong> John Smith</p>
+                        <p><strong>Email:</strong> john.smith@example.com</p>
+                        <p><strong>Date:</strong> April 23, 2025</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Status:</strong> <span class="badge bg-warning">Pending</span></p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h6 class="mb-0">Inquiry Details</h6>
+                    </div>
+                    <div class="card-body">
+                        <p>I'm interested in purchasing the latest XYZ Smartphone model. Could you please let me know if
+                            it's currently in stock? Also, do you offer any promotions for first-time customers? I would
+                            appreciate any information about color options available as well.</p>
+                    </div>
+                </div>
+                <div class="card mb-3 conversation-container-parent">
+                    <div class="conversation-container">
+
+                        <div class="message-bubble message-agent">
+                            <div class="message-name">Support Team</div>
+                            <div class="message-text">
+                                Thank you for your inquiry about our XYZ Smartphone model. We currently have this
+                                model in stock in Black, Blue, and Silver colors. For first-time customers, we offer
+                                a 10% discount on your first purchase. Please use code <strong>WELCOME10</strong> at
+                                checkout. Let me know if you have any other questions!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form id="inquiry-form-id" class="reply-form d-none p-3">
+                <div class="mb-3">
+                    <label for="reply" class="form-label">Reply Message</label>
+                    <textarea class="form-control" name="reply" id="reply" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="status" class="form-label">Update Status</label>
+                    <select class="form-select" name="status" id="status">
+
+                        <option value="in progress">In Progress</option>
+                        <option value="resolved">Resolved</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Send Reply</button>
+            </form>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>

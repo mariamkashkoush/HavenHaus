@@ -1,0 +1,50 @@
+.bg-order-pending{
+    background-color: #02c5e7 !important;
+    background-color: #F1C40F !important;
+}
+.text-order-icon-pending{
+    color: #F1C40F !important;
+}
+
+.bg-order-complete{
+    background-color: #08b914 !important;
+    background-color: #27AE60 !important;
+    background-color: #27AE60 !important;
+    /* opacity: 0.7; */
+}
+.text-order-icon-complete{
+    color: #27AE60 !important;
+}
+
+.bg-order-reject{
+    background-color: red !important;
+    background-color: #E67E22 !important;
+    background-color: #C0392B !important;
+    
+}
+.text-order-icon-reject{
+    color: #C0392B !important;
+}
+
+.bg-order-suppressed{
+    background-color: #d17326 !important;
+    background-color: #95A5A6 !important;
+}
+.text-order-icon-suppressed{
+    color: #95A5A6 !important;
+}
+
+/*status == 5*/
+.bg-order-canceled{
+    background-color: #ff692d !important;
+    background-color: #E74C3C !important;
+    background-color: #C0392B !important;
+    /* background-color: #E74C3C !important; */
+    background-color: #E67E22 !important;
+    
+}
+.text-order-icon-cancel{
+    color: #E74C3C !important;
+    color: #E67E22 !important;
+    
+}

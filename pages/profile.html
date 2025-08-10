@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile_style.css">
+    <script src="../js/pages/profile.js" type="module"></script>
+    
+    <link rel="stylesheet" href="../css/order-status.css">
+</head>
+<body >
+<div class="px-5 px-lg-0">
+    <div id="navbar"></div>
+
+    <h2 class="mt-4 ms-lg-5 fs-1" style="color: black;">My Account</h2>
+    
+    <main class="container-fluid mt-4 mb-5">
+        <div class="row">
+            <!-- Profile menu -->
+            <section class="shadow col-12 col-lg-4 col-xl-3 ms-lg-5 rounded-4" style="background-color: white; height: fit-content;">
+                <div class="p-2">
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="image-container rounded-circle shadow-sm" >
+                            <img src="../assets/images/users/man.png" id="profile-image" class="rounded-circle" width="100%" height="100%">
+                            <i id="edit_icon" class="fa-solid fa-pen-to-square bg-primary text-light p-2 rounded-circle"></i>
+                        </div>
+                        <div class="name-container ms-4">
+                            <h3 id="fullname" style="font-size: 18px;">Islam Mohamed</h3>
+                            <p id="profile_email" style="font-size: 15px;">islam@gmail.com</p>
+                        </div>
+                    </div>
+                    <ul class="nav flex-column list-unstyled mt-3">
+                        <li class="nav-item item item-active p-1" ><a class="nav-link active nav-item-profile" data-bs-toggle="pill" role="tab" data-bs-target="#profile_info_container"><i class="fa-regular fa-user"></i> Profile Information</a></li>
+                        <li id="my-order-button" class="nav-item item p-1" ><a class="nav-link nav-item-profile" data-bs-toggle="pill" role="tab" data-bs-target="#profile_orders_container"><i class="fa-solid fa-border-all"></i> My Orders</a></li>
+                        <li id="sellerdashboard" class="nav-item item p-1" ><a class="nav-link nav-item-profile"  role="tab" ><i class="fa-regular fa-heart"></i> Go To dashboard </a></li>
+                        <li id="profile-whishlist-btn" class="nav-item item p-1" ><a class="nav-link nav-item-profile" data-bs-toggle="pill" role="tab" data-bs-target="#profile_whishlist_container"><i class="fa-regular fa-heart"></i> Wishlist</a></li>
+                        <!-- <li class="item" ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</li> -->
+
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Profile info -->
+            <section class="shadow col-12 col-lg mx-lg-5 rounded-4 pb-4 container mt-5 mt-lg-0" style="background-color: white; height: fit-content;">
+                <div class="tab-content pt-1">
+                    <!-- Profile info  -->
+                    <div id="profile_info_container" class="tab-pane fade show active" role="tabpanel">
+                        <!-- <h3 class="h4 mt-4 ps-2 ms-1">Profile Information</h3> -->
+                        <div class="container pt-1 d-flex justify-content-between align-items-center">
+                            <h3 class="h4 mt-4" >Profile Information</h3>
+                            <button id="editProfile" class="border-0 text-light rounded-3 py-2 px-3 mt-2"><i class="fa-solid fa-pen-to-square mx-1"></i> Edit Profile</button>
+                            <button id="cancel" style="display: none;" class="border-0 text-light rounded-3 py-2 px-3 mt-2"><i class="fa-solid fa-xmark mx-1"></i> Cancel</button>
+                        </div>
+                        <div id="profileInfo" class="container mt-3">
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <h6 class="">First Name</h6>
+                                    <p id="fName" class="">Islam</p>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <h6>Last Name</h6>
+                                    <p id="lName">Mohamed</p>
+                                </div>
+                            </div>
+                            <h6>Email</h6>
+                            <p id="email">im7432922@gmail.com</p>
+                            <h6>Phone</h6>
+                            <p id="phone">01063262986</p>
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <h6>Address</h6>
+                                    <p id="address">Talkha</p>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <h6>City</h6>
+                                    <p id="city">Mansoura</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <h6>Country</h6>
+                                    <p id="country">Egypt</p>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <h6>ZIP</h6>
+                                    <p id="zip">123456</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <h6>Date of Birth</h6>
+                                    <p id="dOfBirth">Not specified</p>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <h6>Gender</h6>
+                                    <p id="gender">Male</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile info form  -->
+                        <form id="profileForm" style="display: none;" class="container clearfix col-12 col-lg mt-4 px-3 pb-3" >
+                            <div class="row pt-1">
+                                <div class="col-12 col-md">
+                                    <lable for="fname" class="form-lable">First Name</lable>
+                                    <input type="text" id="fNameInput" name="fname" class="form-control" required>
+                                </div>
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <lable for="lname" class="form-lable">Last Name</lable>
+                                    <input type="text" id="lNameInput" name="lname" class="form-control" required>
+                                </div>
+                            </div>
+                            <label for="email" class="form-lable pt-3">Email</label>
+                            <input type="email" id="emailInput" name="email" class="form-control" required>
+                            <label for="phone" class="form-lable pt-3">Phone</label>
+                            <input type="text" id="phoneInput" name="phone" class="form-control" required>
+
+                            <div class="row pt-3">
+                                <div class="col-12 col-md">
+                                    <lable for="address" class="form-lable">Address</lable>
+                                    <input type="text" id="addressInput" name="address" class="form-control">
+                                </div>
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <lable for="city" class="form-lable">City</lable>
+                                    <input type="text" id="cityInput" name="city" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <lable for="country" class="form-lable">Country</lable>
+                                    <input type="text" id="countryInput" name="country" class="form-control">
+                                </div>
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <lable for="zip" class="form-lable">ZIP Code</lable>
+                                    <input type="text" id="zipInput" name="zip" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <lable for="country" class="form-lable">Date of Birth</lable>
+                                    <input type="date" id="countryInput" name="country" class="form-control">
+                                </div>
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <lable for="gender" class="form-lable">Gender</lable>
+                                    <div style="position: relative;">
+                                        <select id="genderInput" name="gender" class="form-control">
+                                            <option value="">Select Gender</option>
+                                            <option value="M">Male</option>
+                                            <option value="F">Female</option>
+                                        </select>
+                                        <i class="fa-solid fa-chevron-down" style="position: absolute; right: 1rem; top: 1rem"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="saveChanges" type="button" class="border-0 text-light rounded-3 py-2 px-3 mt-4 float-end"><i class="fa-regular fa-floppy-disk mx-1"></i> Save Changes</button>
+                            <!-- <input type="submit" value="Place Order" class="btn btn-primary p-2 fw-bold fs-5 col-12"> -->
+                        </form>
+                    </div>
+
+                    <!-- Orders history -->
+                    <div id="profile_orders_container" class="tab-pane fade pt-1" role="tabpanel">
+                        
+                        <h3 class="h4 mt-4 ps-2 ms-1">Order History</h3>
+                        <div id="noorders" class="container d-flex flex-column align-items-center justify-content-center mt-5">
+                            <p class="">You haven't placed any orders yet.</p>
+                            <button id="shopping" class="border-0 text-light rounded-3 px-3 py-2 mx-auto" onclick="window.location.href='catalog.html'">Start Shopping</button>
+                        </div>
+                        <div id="exorders" class="orders mx-1 px-2">
+                            <!-- <div class="order">
+                                <hr>
+                                <div class="order-header d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <h4 class="" style="font-size: 17px;">Order #1745915902339</h4>
+                                        <p class="ms-3">4/29/2025</p>
+                                    </div>
+                                    <div>
+                                        <span class="px-3 py-1 rounded-5" style="font-size: 14px; display: inline-block; background-color: #dbeafe; color: #1e5aca;">Processing</span>
+                                        <span class="px-3 py-1 rounded-5" style="font-size: 14px; display: inline-block; background-color: #fef9c3; color: #854d0e;">Shipping: Pending</span>
+                                    </div>
+                                </div>
+                                <div class="order-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div style="width: 80px; height: 90px;">
+                                                <img src="../assets/images/1.jpg" alt="" width="100%" height="100%">
+                                            </div>
+                                            <div class="ms-2" style="line-height: 5px;">
+                                                <p>Leather Cream Sofa × 1</p>
+                                                <p style="font-size: 14px;">Leather - Cream</p>
+                                            </div>
+                                        </div>
+                                        <h5 class="h6">$1299.99</h5>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <button id="viewOrder" class="btn">View Order Details</button>
+                                        <button id="cancelOrder" class="btn">Cancel Order</button>
+                                        <p>Total: <span style="font-weight: bold;">$4449.96</span></p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Whishlist -->
+                    <div id="profile_whishlist_container" class="tab-pane fade" role="tabpanel">
+                        <h3 class="h4 mt-4 ps-2 ms-1">Whishlist</h3>
+                        <div class="d-flex justify-content-center align-items-center py-5">
+                            <p class="h3">Coming Soon!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+        <div id="confirmModal" class="modal">
+            <div class="modal-content">
+              <h2>Confirm Deletion</h2>
+              <p>Are you sure you want to cancel this order?</p>
+              <div class="modal-actions">
+                <button id="confirmDelete">Yes</button>
+                <button id="cancelDelete">NO</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="footer"></div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+        const options = document.querySelectorAll(".nav-item");
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(element => {
+            element.addEventListener("click", (e)=>{
+                options.forEach(ops => {
+                    ops.classList.remove("item-active");
+                });
+                e.target.parentElement.classList.add("item-active");
+            });
+        });
+        
+    </script>
+</body>
+</html>

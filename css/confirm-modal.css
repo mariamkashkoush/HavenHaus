@@ -1,0 +1,100 @@
+/* Custom style for delete modal */
+.custom-delete-modal .modal-content {
+    border-radius: 16px;
+    background: #fff;
+    border: none;
+    padding: 10px 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Header and footer tweaks */
+  .custom-delete-modal .modal-header,
+  .custom-delete-modal .modal-footer {
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* Smooth drop shadow for depth */
+  .custom-delete-modal .modal-content {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal title emphasis */
+  .custom-delete-modal .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Button styling enhancements */
+  .custom-delete-modal .btn-outline-secondary {
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-delete-modal .btn-outline-secondary:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .custom-delete-modal .btn-danger {
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .custom-delete-modal .btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+
+  /* Pop-in scale animation */
+@keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the pop effect */
+  .pop-effect {
+    animation: popIn 0.2s ease-out;
+    border-radius: 16px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 0, 0, 0.05);
+  }
+  
+  /* Modal header and footer - clean look */
+  .custom-delete-modal .modal-header,
+  .custom-delete-modal .modal-footer {
+    border: none;
+    background: transparent;
+  }
+  
+  /* Title styling */
+  .custom-delete-modal .modal-title {
+    font-size: 1.6rem;
+  }
+  
+  /* Buttons */
+  .custom-delete-modal .btn-outline-secondary,
+  .custom-delete-modal .btn-danger {
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  /* Hover animations */
+  .custom-delete-modal .btn-outline-secondary:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.05);
+  }
+  
+  .custom-delete-modal .btn-danger:hover {
+    background-color: #c82333;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+    transform: scale(1.08);
+  }
+  

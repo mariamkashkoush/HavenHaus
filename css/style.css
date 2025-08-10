@@ -1,0 +1,228 @@
+:root{
+    --bg-color-2:rgb(240, 248, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/***** NavBar *****/ 
+ 
+.nav-link,.nav-link-item {
+  transition: transform 0.2s ease-in, color 0.2s ease-in;
+}
+
+.nav-link:hover,.nav-link-item:hover{
+  color: #0866ff;
+  transform: scale(1.2);
+}
+.nav-link-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+
+@media all and (max-width: 700px) {
+  .nav-link:hover {
+ 
+    transform: none;
+  }
+}
+/***** End NavBar *****/
+
+
+
+
+
+/***** footer*****/ 
+
+.footer{
+    background-color: var(--bg-color-2);
+}
+
+.social-group a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .social-icon,
+  .social-text {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+ 
+  .social-group:hover .social-icon,
+  .social-group:hover .social-text {
+    transform: scale(1.2);
+  }
+  
+
+  .social-group:hover .fa-facebook {
+    color: #0866ff;
+
+
+  }
+  
+  .social-group:hover .fa-instagram {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+  .social-group:hover .fa-pinterest {
+    color: #E60023;
+  }
+  
+
+  .social-group:hover .social-text {
+    color: #000 !important;
+  }
+
+  .footer-text:hover {
+    color: #000 !important;
+  }
+  
+ /***** End footer *****/
+
+/* ShopDesign */
+.input{
+  width: 200px !important;
+}
+
+.product-card {
+  object-fit: cover;
+  height: 200px;
+}
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.Mycard {
+  position: relative;
+  
+}
+
+.slect{
+  width: 60px !important;
+}
+
+.favorite-icon:active{
+  color: red;
+}
+/* EndShopDesign */
+
+
+/***** ofocanvas and cart icon *****/ 
+
+.offcanvas { width: 400px; }
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.cart-item .card-body a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.cart-item .card-body a  h5{
+  transition: all 0.3s;
+}
+.cart-item .card-body a  :hover{
+  color: blue;
+  transform: scale(1.03);
+}
+.cart-item .delete-card-btn:hover{
+  color: #000;
+  background-color: #eee;
+}
+.cart-item img {
+  /* width: 100%; */
+  /* height: 10000px; */
+  /* object-fit: cover; */
+  border-radius: 0.5rem;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-controls button {
+  padding: 0.25rem 0.5rem;
+}
+
+.cart-total {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/***** End ofocanvas and cart icon *****/
+/***** animation styles *****/ 
+body{
+  overflow-x: hidden;
+}
+.hidden-animation {
+  opacity: 0;
+  transition: all 1s ease-out;
+  will-change: transform, opacity;
+}
+
+
+.from-left-animation {
+  transform: translateX(-5rem);
+}
+
+.from-right-animation {
+  transform: translateX(5rem);
+}
+
+.from-z-animation {
+  transform: scale(2) translateZ(5rem);
+  
+}
+.from-bottom-animation{
+  transform: translateY(4rem);
+}
+
+.from-top-animation{
+  transform: translateY(-4rem);
+}
+
+
+
+.show-animation {
+  opacity: 1;
+  transform: none;
+  transition: all 1s ease;
+}
+/***** End animation styles *****/
+
+
+
+.cart-item{
+
+}

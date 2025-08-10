@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin DashBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/admin.css">
+    
+   
+
+
+</head>
+<body>
+    <button class="btn btn-dark d-md-none m-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" id="sidebarToggle">☰</button>
+    <div class="container-fluid">
+        <div class="row ">
+            <!-- Sidebar -->
+
+            <nav class="col-md-2 collapse d-md-block bg-dark sidebar text-white p-3 position-fixed" id="sidebar">
+                <h4 class="mb-3"><i class="bi bi-person-dash"></i> Admin</h4>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link text-white"  id="dashboard_button" ><i class="bi bi-speedometer2 me-2"></i> Dashboard</a></text-white></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" id="user_button"><i class="bi bi-people-fill me-2"></i> Users</a></text-white></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" id="product_button"><i class="bi bi-box-seam me-2"></i> Products</a></text-white></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" id="order_button"><i class="bi bi-cart-check me-2"></i> Orders</a></text-white></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" id="support_button"><i class="bi bi-chat-dots me-2"></i> Support</a></text-white></li>
+
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="offset-md-2 col-md-10 p-4" id="main-content" style="min-height: 100vh; overflow-y: auto;">
+                
+                <h2 class="mb-4"><i class="bi bi-speedometer"></i> Dashboard Overview</h2>
+
+                <div class="row g-4">
+                    <!-- Total Users Card  -->
+                    <div class="col-md-3">
+                        <div class="card text-white bg-primary">
+                            <div class="card-body d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Total Users</h5>
+                                    <p class="card-text fs-4" id="totalUsers">0</p>
+                                </div>
+                                <i class="bi bi-people-fill fs-1"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Products Card -->
+                    <div class="col-md-3">
+                        <div class="card text-white bg-success">
+                            <div class="card-body d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Total Products</h5>
+                                    <p class="card-text fs-4" id="totalProducts">75</p>
+                                </div>
+                                <i class="bi bi-box-seam fs-1"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Orders Card -->
+                    <div class="col-md-3">
+                        <div class="card text-white bg-warning">
+                            <div class="card-body d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Total orders</h5>
+                                    <p class="card-text fs-4" id="totalOrders">230</p>
+                                </div>
+                                <i class="bi bi-cart-check fs-1" ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sellers Card  -->
+                    <div class="col-md-3">
+                        <div class="card text-white bg-danger">
+                            <div class="card-body d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h5 class="card-title">Pending Sellers</h5>
+                                    <p class="card-text fs-4" id="pendingSellers">7</p>
+                                </div>
+                                <i class="bi bi-clock-history fs-1"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Users -->
+                    <!-- Charts Section -->
+
+
+                    <div id="content" class="mt-4">
+
+
+
+                        <!-- inquiries -->
+                    
+                    </div>
+
+                    
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+            <div id="FormModal"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/pages/Admin.js" type="module"></script>
+</body>
+</html>

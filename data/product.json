@@ -1,0 +1,2075 @@
+{
+  "product": [
+    {
+      "id": "ModernDiningChair_1_q1w2e3r",
+      "sellerID": "david_martin_008",
+      "name": "Modern Dining Chair",
+      "category": 1,
+      "price": 129.99,
+      "desc": "Elegant wooden dining chair with cushioned seat.",
+      "imageUrl": "Modern Dining Chair",
+      "stock": 15,
+      "featured": true,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Durable Finish",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [
+        {
+          "date": "12/5/2015",
+          "customerName": "Ali",
+          "text": "hal aljf aljfl fsljfs fsja fljasfl"
+        },
+        {
+          "date": "12/5/2015",
+          "customerName": "Ali",
+          "text": "hal aljf aljfl fsljfs fsja fljasfl"
+        }
+      ],
+      "isDeleted": false
+    },
+    {
+      "id": "PlushSofa_2_t4y5u6i",
+      "sellerID": "aliouf_35322",
+      "name": "Plush Sofa",
+      "category": 2,
+      "price": 780.00,
+      "desc": "Ultra-soft three-seater sofa for ultimate comfort.",
+      "imageUrl": "Plush Sofa",
+      "stock": 8,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OakCoffeeTable_3_o7p8a9s",
+      "sellerID": "mark_taylor_004",
+      "name": "Oak Coffee Table",
+      "category": 3,
+      "price": 249.50,
+      "desc": "Solid oak wood with lower shelf for magazines.",
+      "imageUrl": "Oak Coffee Table",
+      "stock": 12,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Solid Wood Construction",
+        "Integrated Storage",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "L-ShapedSectional_4_d0f1g2h",
+      "sellerID": "david_martin_008",
+      "name": "L-Shaped Sectional",
+      "category": 4,
+      "price": 1199.00,
+      "desc": "Spacious sectional with modular design.",
+      "imageUrl": "L-Shaped Sectional",
+      "stock": 3,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Modular Design",
+        "Comfortable Cushioning",
+        "Space Saving"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "QueenPlatformBed_5_j3k4l5z",
+      "sellerID": "aliouf_35322",
+      "name": "Queen Platform Bed",
+      "category": 5,
+      "price": 599.99,
+      "desc": "Modern bed with storage drawers and headboard.",
+      "imageUrl": "Queen Platform Bed",
+      "stock": 7,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Sturdy Construction",
+        "Stylish Design"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "MultipurposeCabinet_6_x6c7v8b",
+      "sellerID": "mark_taylor_004",
+      "name": "Multi-purpose Cabinet",
+      "category": 6,
+      "price": 199.00,
+      "desc": "Versatile storage cabinet with 4 drawers.",
+      "imageUrl": "Multi-purpose Cabinet",
+      "stock": 10,
+      "featured": true,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ErgonomicOfficeDesk_7_n9m0q1w",
+      "sellerID": "michael_clark_006",
+      "name": "Ergonomic Office Desk",
+      "category": 7,
+      "price": 380.00,
+      "desc": "Desk designed for comfort and productivity.",
+      "imageUrl": "Ergonomic Office Desk",
+      "stock": 11,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Ergonomic Support",
+        "Adjustable Features",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorPatioSet_8_e2r3t4y",
+      "sellerID": "aliouf_35322",
+      "name": "Outdoor Patio Set",
+      "category": 8,
+      "price": 899.00,
+      "desc": "Weatherproof set with sofa, chairs, and table.",
+      "imageUrl": "Outdoor Patio Set",
+      "stock": 6,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Durable Finish",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "MinimalistBookshelf_6_u5i6o7p",
+      "sellerID": "mary_smith_002",
+      "name": "Minimalist Bookshelf",
+      "category": 6,
+      "price": 149.00,
+      "desc": "Sleek metal frame bookshelf with five spacious shelves.",
+      "imageUrl": "Minimalist Bookshelf",
+      "stock": 18,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "LeatherRecliner_2_a8s9d0f",
+      "sellerID": "david_martin_008",
+      "name": "Leather Recliner",
+      "category": 2,
+      "price": 450.00,
+      "desc": "Single recliner chair in genuine leather.",
+      "imageUrl": "Leather Recliner",
+      "stock": 7,
+      "featured": true,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Genuine Leather Upholstery",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "RoundDiningTable_1_g1h2j3k",
+      "sellerID": "aliouf_35322",
+      "name": "Round Dining Table",
+      "category": 1,
+      "price": 320.00,
+      "desc": "Compact round table ideal for smaller dining areas.",
+      "imageUrl": "Round Dining Table",
+      "stock": 9,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Solid Wood Construction",
+        "Space Saving",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "KidsBunkBed_5_l4z5x6c",
+      "sellerID": "mary_smith_002",
+      "name": "Kids Bunk Bed",
+      "category": 5,
+      "price": 480.00,
+      "desc": "Space-saving bunk bed for kids, includes safety rails.",
+      "imageUrl": "Kids Bunk Bed",
+      "stock": 9,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Sturdy Construction",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "EntrywayConsoleTable_3_v7b8n9m",
+      "sellerID": "david_martin_008",
+      "name": "Entryway Console Table",
+      "category": 3,
+      "price": 175.00,
+      "desc": "Narrow table perfect for hallways, with a small drawer.",
+      "imageUrl": "Entryway Console Table",
+      "stock": 19,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Stylish Design"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "FabricArmchair_2_q0w1e2r",
+      "sellerID": "aliouf_35322",
+      "name": "Fabric Armchair",
+      "category": 2,
+      "price": 240.50,
+      "desc": "Comfortable armchair with durable fabric upholstery.",
+      "imageUrl": "Fabric Armchair",
+      "stock": 9,
+      "featured": true,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Durable Finish",
+        "Stylish Design"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "GlassCoffeeTable_3_t3y4u5i",
+      "sellerID": "mary_smith_002",
+      "name": "Glass Coffee Table",
+      "category": 3,
+      "price": 180.00,
+      "desc": "Modern coffee table with tempered glass top and unique base.",
+      "imageUrl": "Glass Coffee Table",
+      "stock": 15,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Easy to Clean",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "KingSizeBedFrame_5_o6p7a8s",
+      "sellerID": "david_martin_008",
+      "name": "King Size Bed Frame",
+      "category": 5,
+      "price": 650.99,
+      "desc": "Sturdy metal bed frame, fits standard king size mattress.",
+      "imageUrl": "King Size Bed Frame",
+      "stock": 4,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Sturdy Metal Frame",
+        "Easy Assembly",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ModularSofa_4_d9f0g1h",
+      "sellerID": "aliouf_35322",
+      "name": "Modular Sofa",
+      "category": 4,
+      "price": 1300.00,
+      "desc": "Configurable sofa sections to fit any living room layout.",
+      "imageUrl": "Modular Sofa",
+      "stock": 3,
+      "featured": true,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Modular Design",
+        "Comfortable Cushioning",
+        "Space Saving"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorDiningTable_8_j2k3l4z",
+      "sellerID": "mary_smith_002",
+      "name": "Outdoor Dining Table",
+      "category": 8,
+      "price": 300.00,
+      "desc": "Weather-resistant table for outdoor meals, seats 6.",
+      "imageUrl": "Outdoor Dining Table",
+      "stock": 6,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Durable Finish",
+        "Easy to Clean"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SideTable_3_n8m9q0w",
+      "sellerID": "aliouf_35322",
+      "name": "Side Table",
+      "category": 3,
+      "price": 95.00,
+      "desc": "Small table perfect next to a sofa or chair.",
+      "imageUrl": "Side Table",
+      "stock": 23,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "StorageBench_6_e1r2t3y",
+      "sellerID": "mary_smith_002",
+      "name": "Storage Bench",
+      "category": 6,
+      "price": 130.00,
+      "desc": "Bench with hidden storage space under the seat.",
+      "imageUrl": "Storage Bench",
+      "stock": 20,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "AdjustableOfficeChair_7_u4i5o6p",
+      "sellerID": "michael_clark_006",
+      "name": "Adjustable Office Chair",
+      "category": 7,
+      "price": 185.50,
+      "desc": "Chair with adjustable height and lumbar support.",
+      "imageUrl": "Adjustable Office Chair",
+      "stock": 25,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Ergonomic Support",
+        "Adjustable Features",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ChaiseLounge_2_a7s8d9f",
+      "sellerID": "aliouf_35322",
+      "name": "Chaise Lounge",
+      "category": 2,
+      "price": 315.00,
+      "desc": "Comfortable lounge chair for relaxing, available in various colors.",
+      "imageUrl": "Chaise Lounge",
+      "stock": 7,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "WoodenWardrobe_6_g0h1j2k",
+      "sellerID": "mark_taylor_004",
+      "name": "Wooden Wardrobe",
+      "category": 6,
+      "price": 450.00,
+      "desc": "Spacious double-door wardrobe with hanging rail and shelves.",
+      "imageUrl": "Wooden Wardrobe",
+      "stock": 10,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Solid Wood Construction",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "IndustrialDiningChair_1_l3z4x5c",
+      "sellerID": "david_martin_008",
+      "name": "Industrial Dining Chair",
+      "category": 1,
+      "price": 85.00,
+      "desc": "Metal frame dining chair with wooden seat.",
+      "imageUrl": "Industrial Dining Chair",
+      "stock": 28,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Durable Finish",
+        "Sturdy Metal Frame",
+        "Easy to Clean"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "Sit-StandDesk_7_v6b7n8m",
+      "sellerID": "aliouf_35322",
+      "name": "Sit-Stand Desk",
+      "category": 7,
+      "price": 349.00,
+      "desc": "Desk with adjustable height for sitting or standing work.",
+      "imageUrl": "Sit-Stand Desk",
+      "stock": 8,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Adjustable Features",
+        "Ergonomic Support",
+        "Durable Finish"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "CornerSectional_4_q9w0e1r",
+      "sellerID": "mary_smith_002",
+      "name": "Corner Sectional",
+      "category": 4,
+      "price": 950.00,
+      "desc": "Large sectional sofa designed to fit into a room corner.",
+      "imageUrl": "Corner Sectional",
+      "stock": 5,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Modular Design",
+        "Comfortable Cushioning",
+        "Space Saving"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorLoungeChair_8_t2y3u4i",
+      "sellerID": "david_martin_008",
+      "name": "Outdoor Lounge Chair",
+      "category": 8,
+      "price": 190.00,
+      "desc": "Comfortable chair for lounging outdoors.",
+      "imageUrl": "Outdoor Lounge Chair",
+      "stock": 11,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "Daybed_5_o5p6a7s",
+      "sellerID": "aliouf_35322",
+      "name": "Daybed",
+      "category": 5,
+      "price": 400.00,
+      "desc": "Bed that can be used as a sofa during the day.",
+      "imageUrl": "Daybed",
+      "stock": 13,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Space Saving",
+        "Multi-functional",
+        "Stylish Design"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "FilingCabinet_6_d8f9g0h",
+      "sellerID": "mary_smith_002",
+      "name": "Filing Cabinet",
+      "category": 6,
+      "price": 110.00,
+      "desc": "Metal cabinet with multiple drawers for organizing files.",
+      "imageUrl": "Filing Cabinet",
+      "stock": 20,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Durable Finish",
+        "Easy to Clean"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "AccentChair_2_j1k2l3z",
+      "sellerID": "david_martin_008",
+      "name": "Accent Chair",
+      "category": 2,
+      "price": 190.00,
+      "desc": "Stylish individual chair to complement a living room set.",
+      "imageUrl": "Accent Chair",
+      "stock": 15,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ExtendableDiningTable_1_x4c5v6b",
+      "sellerID": "aliouf_35322",
+      "name": "Extendable Dining Table",
+      "category": 1,
+      "price": 420.00,
+      "desc": "Table that extends to accommodate more guests.",
+      "imageUrl": "Extendable Dining Table",
+      "stock": 8,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Space Saving",
+        "Multi-functional",
+        "Solid Wood Construction"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "GamingDesk_7_n7m8q9w",
+      "sellerID": "mary_smith_002",
+      "name": "Gaming Desk",
+      "category": 7,
+      "price": 280.00,
+      "desc": "Desk designed with features for PC gaming setups.",
+      "imageUrl": "Gaming Desk",
+      "stock": 10,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Ergonomic Support",
+        "Integrated Storage",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorSofa_8_e0r1t2y",
+      "sellerID": "michael_clark_006",
+      "name": "Outdoor Sofa",
+      "category": 8,
+      "price": 550.00,
+      "desc": "Comfortable sofa designed for outdoor living spaces.",
+      "imageUrl": "Outdoor Sofa",
+      "stock": 7,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "TuftedSofa_2_u3i4o5p",
+      "sellerID": "aliouf_35322",
+      "name": "Tufted Sofa",
+      "category": 2,
+      "price": 680.00,
+      "desc": "Sofa featuring decorative tufting on the back and arms.",
+      "imageUrl": "Tufted Sofa",
+      "stock": 7,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "LiftTopCoffeeTable_3_a6s7d8f",
+      "sellerID": "mary_smith_002",
+      "name": "Lift Top Coffee Table",
+      "category": 3,
+      "price": 190.00,
+      "desc": "Coffee table with a top that lifts up for a workspace or dining.",
+      "imageUrl": "Lift Top Coffee Table",
+      "stock": 13,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Multi-functional",
+        "Integrated Storage",
+        "Space Saving"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "CanopyBed_5_g9h0j1k",
+      "sellerID": "david_martin_008",
+      "name": "Canopy Bed",
+      "category": 5,
+      "price": 700.00,
+      "desc": "Bed frame with four posts to support a canopy.",
+      "imageUrl": "Canopy Bed",
+      "stock": 5,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Sturdy Construction",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "DisplayCabinet_6_l2z3x4c",
+      "sellerID": "aliouf_35322",
+      "name": "Display Cabinet",
+      "category": 6,
+      "price": 250.00,
+      "desc": "Cabinet with glass doors for displaying items.",
+      "imageUrl": "Display Cabinet",
+      "stock": 11,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "BarStool_1_v5b6n7m",
+      "sellerID": "mary_smith_002",
+      "name": "Bar Stool",
+      "category": 1,
+      "price": 75.00,
+      "desc": "Swivel stool with adjustable height, suitable for kitchen islands.",
+      "imageUrl": "Bar Stool",
+      "stock": 30,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Adjustable Features",
+        "Durable Finish",
+        "Easy to Clean"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ExecutiveDesk_7_q8w9e0r",
+      "sellerID": "david_martin_008",
+      "name": "Executive Desk",
+      "category": 7,
+      "price": 550.00,
+      "desc": "Large, premium desk for an executive office.",
+      "imageUrl": "Executive Desk",
+      "stock": 6,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Ergonomic Support",
+        "Integrated Storage",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorBarSet_8_t1y2u3i",
+      "sellerID": "aliouf_35322",
+      "name": "Outdoor Bar Set",
+      "category": 8,
+      "price": 500.00,
+      "desc": "Bar height table with matching stools for outdoor.",
+      "imageUrl": "Outdoor Bar Set",
+      "stock": 7,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Durable Finish",
+        "Easy to Clean"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SofaBed_2_o4p5a6s",
+      "sellerID": "mary_smith_002",
+      "name": "Sofa Bed",
+      "category": 2,
+      "price": 500.00,
+      "desc": "Sofa that converts into a bed.",
+      "imageUrl": "Sofa Bed",
+      "stock": 9,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Multi-functional",
+        "Space Saving",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "NestingTables_3_d7f8g9h",
+      "sellerID": "david_martin_008",
+      "name": "Nesting Tables",
+      "category": 3,
+      "price": 160.00,
+      "desc": "Set of two tables that tuck under each other for space-saving.",
+      "imageUrl": "Nesting Tables",
+      "stock": 19,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "TrundleBed_5_j0k1l2z",
+      "sellerID": "aliouf_35322",
+      "name": "Trundle Bed",
+      "category": 5,
+      "price": 380.00,
+      "desc": "Bed with a second pull-out bed stored underneath.",
+      "imageUrl": "Trundle Bed",
+      "stock": 11,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Space Saving",
+        "Multi-functional",
+        "Sturdy Construction"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "CubeStorage_6_x3c4v5b",
+      "sellerID": "mary_smith_002",
+      "name": "Cube Storage",
+      "category": 6,
+      "price": 85.00,
+      "desc": "Modular storage unit with multiple cube compartments.",
+      "imageUrl": "Cube Storage",
+      "stock": 40,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Modular Design",
+        "Integrated Storage",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "WingbackChair_2_n6m7q8w",
+      "sellerID": "michael_clark_006",
+      "name": "Wingback Chair",
+      "category": 2,
+      "price": 300.00,
+      "desc": "Traditional armchair with 'wings' on the back.",
+      "imageUrl": "Wingback Chair",
+      "stock": 11,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "BenchwithBack_1_e9r0t1y",
+      "sellerID": "aliouf_35322",
+      "name": "Bench with Back",
+      "category": 1,
+      "price": 140.00,
+      "desc": "Dining bench with a supportive backrest.",
+      "imageUrl": "Bench with Back",
+      "stock": 16,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Solid Wood Construction",
+        "Stylish Design"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ConvertibleSofaBed_2_u2i3o4p",
+      "sellerID": "mary_smith_002",
+      "name": "Convertible Sofa Bed",
+      "category": 2,
+      "price": 600.00,
+      "desc": "Sofa that easily converts into a comfortable bed.",
+      "imageUrl": "Convertible Sofa Bed",
+      "stock": 8,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Multi-functional",
+        "Space Saving",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "AccentTable_3_a5s6d7f",
+      "sellerID": "david_martin_008",
+      "name": "Accent Table",
+      "category": 3,
+      "price": 85.00,
+      "desc": "Small decorative table for various rooms.",
+      "imageUrl": "Accent Table",
+      "stock": 21,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Space Saving",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "FullSizeBedFrame_5_g8h9j0k",
+      "sellerID": "aliouf_35322",
+      "name": "Full Size Bed Frame",
+      "category": 5,
+      "price": 400.00,
+      "desc": "Sturdy bed frame for a full-size mattress.",
+      "imageUrl": "Full Size Bed Frame",
+      "stock": 11,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Sturdy Construction",
+        "Easy Assembly",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "NarrowBookshelf_6_l1z2x3c",
+      "sellerID": "mark_taylor_004",
+      "name": "Narrow Bookshelf",
+      "category": 6,
+      "price": 110.00,
+      "desc": "Slim bookshelf perfect for tight spaces.",
+      "imageUrl": "Narrow Bookshelf",
+      "stock": 25,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SwivelChair_2_v4b5n6m",
+      "sellerID": "david_martin_008",
+      "name": "Swivel Chair",
+      "category": 2,
+      "price": 270.00,
+      "desc": "Comfortable chair that can rotate 360 degrees.",
+      "imageUrl": "Swivel Chair",
+      "stock": 10,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Multi-functional",
+        "Stylish Design"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "CounterHeightDiningSet_1_q7w8e9r",
+      "sellerID": "aliouf_35322",
+      "name": "Counter Height Dining Set",
+      "category": 1,
+      "price": 380.00,
+      "desc": "Taller dining table with matching counter-height stools.",
+      "imageUrl": "Counter Height Dining Set",
+      "stock": 7,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Solid Wood Construction",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "CompactOfficeDesk_7_t0y1u2i",
+      "sellerID": "mary_smith_002",
+      "name": "Compact Office Desk",
+      "category": 7,
+      "price": 120.00,
+      "desc": "Small desk suitable for limited office space.",
+      "imageUrl": "Compact Office Desk",
+      "stock": 20,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Easy Assembly",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "U-ShapedSectional_4_o3p4a5s",
+      "sellerID": "david_martin_008",
+      "name": "U-Shaped Sectional",
+      "category": 4,
+      "price": 1500.00,
+      "desc": "Very large sectional sofa forming a 'U' shape.",
+      "imageUrl": "U-Shaped Sectional",
+      "stock": 3,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Modular Design",
+        "Comfortable Cushioning",
+        "Stylish Design"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorAccentTable_8_d6f7g8h",
+      "sellerID": "aliouf_35322",
+      "name": "Outdoor Accent Table",
+      "category": 8,
+      "price": 80.00,
+      "desc": "Small table for drinks or decor on a patio.",
+      "imageUrl": "Outdoor Accent Table",
+      "stock": 15,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Space Saving",
+        "Easy to Clean"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "FutonSofa_2_j9k0l1z",
+      "sellerID": "mary_smith_002",
+      "name": "Futon Sofa",
+      "category": 2,
+      "price": 220.00,
+      "desc": "Sofa that easily converts into a bed.",
+      "imageUrl": "Futon Sofa",
+      "stock": 12,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Multi-functional",
+        "Space Saving",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "TrunkCoffeeTable_3_x2c3v4b",
+      "sellerID": "david_martin_008",
+      "name": "Trunk Coffee Table",
+      "category": 3,
+      "price": 190.00,
+      "desc": "Coffee table designed like a vintage storage trunk.",
+      "imageUrl": "Trunk Coffee Table",
+      "stock": 9,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "Captain'sBed_5_n5m6q7w",
+      "sellerID": "aliouf_35322",
+      "name": "Captain's Bed",
+      "category": 5,
+      "price": 450.00,
+      "desc": "Bed with built-in drawers underneath for storage.",
+      "imageUrl": "Captain's Bed",
+      "stock": 8,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Sturdy Construction"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "TallStorageCabinet_6_e8r9t0y",
+      "sellerID": "mary_smith_002",
+      "name": "Tall Storage Cabinet",
+      "category": 6,
+      "price": 280.00,
+      "desc": "Vertical cabinet offering ample storage space.",
+      "imageUrl": "Tall Storage Cabinet",
+      "stock": 12,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "PapasanChair_2_u1i2o3p",
+      "sellerID": "michael_clark_006",
+      "name": "Papasan Chair",
+      "category": 2,
+      "price": 190.00,
+      "desc": "Round, bowl-shaped chair with a soft cushion.",
+      "imageUrl": "Papasan Chaire",
+      "stock": 12,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "DropLeafDiningTable_1_a4s5d6f",
+      "sellerID": "aliouf_35322",
+      "name": "Drop Leaf Dining Table",
+      "category": 1,
+      "price": 200.00,
+      "desc": "Table with hinged sections that can be folded down.",
+      "imageUrl": "Drop Leaf Dining Table",
+      "stock": 15,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Space Saving",
+        "Multi-functional",
+        "Solid Wood Construction"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OfficeCredenza_7_g7h8j9k",
+      "sellerID": "mark_taylor_004",
+      "name": "Office Credenza",
+      "category": 7,
+      "price": 300.00,
+      "desc": "Side cabinet for office storage and workspace.",
+      "imageUrl": "Office Credenza",
+      "stock": 12,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Durable Finish",
+        "Ergonomic Support"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorChaiseLounge_8_l0z1x2c",
+      "sellerID": "david_martin_008",
+      "name": "Outdoor Chaise Lounge",
+      "category": 8,
+      "price": 250.00,
+      "desc": "Reclining lounge chair for sunbathing by the pool or patio.",
+      "imageUrl": "Outdoor Chaise Lounge",
+      "stock": 8,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "MurphyBed_5_v3b4n5m",
+      "sellerID": "aliouf_35322",
+      "name": "Murphy Bed",
+      "category": 5,
+      "price": 900.00,
+      "desc": "Bed that folds up into a wall cabinet to save space.",
+      "imageUrl": "Murphy Bed",
+      "stock": 4,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Space Saving",
+        "Multi-functional",
+        "Sturdy Construction"
+      ],
+      "instructions": "Professional assembly recommended.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "Settee_2_q6w7e8r",
+      "sellerID": "mary_smith_002",
+      "name": "Settee",
+      "category": 2,
+      "price": 350.00,
+      "desc": "Small upholstered bench or two-seater sofa.",
+      "imageUrl": "Settee",
+      "stock": 10,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Comfortable Cushioning",
+        "Space Saving"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ConsoleTablewithShelves_3_t9y0u1i",
+      "sellerID": "david_martin_008",
+      "name": "Console Table with Shelves",
+      "category": 3,
+      "price": 160.00,
+      "desc": "Hallway table with open shelves for display or storage.",
+      "imageUrl": "Console Table with Shelves",
+      "stock": 18,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Stylish Design",
+        "Space Saving"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "AdjustableBedBase_5_o2p3a4s",
+      "sellerID": "aliouf_35322",
+      "name": "Adjustable Bed Base",
+      "category": 5,
+      "price": 800.00,
+      "desc": "Bed base that allows adjusting the head and foot positions.",
+      "imageUrl": "Adjustable Bed Base",
+      "stock": 7,
+      "featured": false,
+      "warranty": "Limited Lifetime Warranty",
+      "highlights": [
+        "Adjustable Features",
+        "Ergonomic Support",
+        "Sturdy Construction"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "PubTableSet_1_d5f6g7h",
+      "sellerID": "mary_smith_002",
+      "name": "Pub Table Set",
+      "category": 1,
+      "price": 300.00,
+      "desc": "Tall table with matching stools, ideal for a casual dining area.",
+      "imageUrl": "Pub Table Set",
+      "stock": 9,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Durable Finish",
+        "Easy to Clean"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "StandingDeskConverter_7_j8k9l0z",
+      "sellerID": "david_martin_008",
+      "name": "Standing Desk Converter",
+      "category": 7,
+      "price": 150.00,
+      "desc": "Device placed on a regular desk to work while standing.",
+      "imageUrl": "Standing Desk Converter",
+      "stock": 25,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Adjustable Features",
+        "Ergonomic Support",
+        "Space Saving"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorSectional_8_x1c2v3b",
+      "sellerID": "aliouf_35322",
+      "name": "Outdoor Sectional",
+      "category": 8,
+      "price": 1100.00,
+      "desc": "Sectional sofa designed for outdoor patio spaces.",
+      "imageUrl": "Outdoor Sectional",
+      "stock": 5,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Comfortable Cushioning",
+        "Modular Design"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "VelvetArmchair_2_n4m5q6w",
+      "sellerID": "mary_smith_002",
+      "name": "Velvet Armchair",
+      "category": 2,
+      "price": 280.00,
+      "desc": "Luxurious armchair upholstered in soft velvet.",
+      "imageUrl": "Velvet Armchair",
+      "stock": 10,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "DrumCoffeeTable_3_e7r8t9y",
+      "sellerID": "michael_clark_006",
+      "name": "Drum Coffee Table",
+      "category": 3,
+      "price": 170.00,
+      "desc": "Round coffee table with a solid base, shaped like a drum.",
+      "imageUrl": "Drum Coffee Table",
+      "stock": 14,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Solid Wood Construction",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "WideBookshelf_6_u0i1o2p",
+      "sellerID": "mary_smith_002",
+      "name": "Wide Bookshelf",
+      "category": 6,
+      "price": 210.00,
+      "desc": "Broad bookshelf offering extensive storage space.",
+      "imageUrl": "Wide Bookshelf",
+      "stock": 17,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Durable Finish",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "BenchwithStorage_6_a3s4d5f",
+      "sellerID": "david_martin_008",
+      "name": "Bench with Storage",
+      "category": 6,
+      "price": 150.00,
+      "desc": "Bench with a lift-top lid for storing shoes or accessories.",
+      "imageUrl": "Bench with Storage",
+      "stock": 13,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Multi-functional"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ClubChair_2_g6h7j8k",
+      "sellerID": "aliouf_35322",
+      "name": "Club Chair",
+      "category": 2,
+      "price": 320.00,
+      "desc": "Upholstered armchair with low back and deep seat.",
+      "imageUrl": "Club Chair",
+      "stock": 8,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SquareCoffeeTable_3_l9z0x1c",
+      "sellerID": "mark_taylor_004",
+      "name": "Square Coffee Table",
+      "category": 3,
+      "price": 145.00,
+      "desc": "Geometric square-shaped coffee table.",
+      "imageUrl": "Square Coffee Table",
+      "stock": 17,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Durable Finish",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "LoftBed_5_v2b3n4m",
+      "sellerID": "david_martin_008",
+      "name": "Loft Bed",
+      "category": 5,
+      "price": 500.00,
+      "desc": "Bed raised high with space underneath for desk or seating.",
+      "imageUrl": "Loft Bed",
+      "stock": 6,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Space Saving",
+        "Multi-functional",
+        "Sturdy Construction"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "EntrywayCabinet_6_q5w6e7r",
+      "sellerID": "aliouf_35322",
+      "name": "Entryway Cabinet",
+      "category": 6,
+      "price": 180.00,
+      "desc": "Small cabinet for an entryway to store keys and small items.",
+      "imageUrl": "Entryway Cabinet",
+      "stock": 14,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Stylish Design"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorDiningSet_8_t8y9u0i",
+      "sellerID": "mary_smith_002",
+      "name": "Outdoor Dining Set",
+      "category": 8,
+      "price": 650.00,
+      "desc": "Complete outdoor table and chairs set for dining.",
+      "imageUrl": "Outdoor Dining Set",
+      "stock": 5,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Durable Finish",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "BridgeportSofa_2_o1p2a3s",
+      "sellerID": "david_martin_008",
+      "name": "Bridgeport Sofa",
+      "category": 2,
+      "price": 700.00,
+      "desc": "Stylish sofa with unique armrests.",
+      "imageUrl":  "Bridgeport Sofa",
+      "stock": 8,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Comfortable Cushioning",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "EndTable_3_d4f5g6h",
+      "sellerID": "aliouf_35322",
+      "name": "End Table",
+      "category": 3,
+      "price": 75.00,
+      "desc": "Small table placed next to a sofa or chair.",
+      "imageUrl": "End Table",
+      "stock": 30,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SleighBed_5_j7k8l9z",
+      "sellerID": "mary_smith_002",
+      "name": "Sleigh Bed",
+      "category": 5,
+      "price": 580.00,
+      "desc": "Bed with a curved headboard and footboard resembling a sleigh.",
+      "imageUrl": "Sleigh Bed",
+      "stock": 7,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Stylish Design",
+        "Sturdy Construction",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OfficeBookcase_6_x0c1v2b",
+      "sellerID": "michael_clark_006",
+      "name": "Office Bookcase",
+      "category": 6,
+      "price": 180.00,
+      "desc": "Bookcase suitable for an office environment.",
+      "imageUrl":  "Office Bookcase",
+      "stock": 17,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Durable Finish",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SofaChaise_4_n3m4q5w",
+      "sellerID": "aliouf_35322",
+      "name": "Sofa Chaise",
+      "category": 4,
+      "price": 850.00,
+      "desc": "Sofa with an extended chaise lounge section.",
+      "imageUrl":"Sofa Chaise",
+      "stock": 7,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Space Saving"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorPicnicTable_8_e6r7t8y",
+      "sellerID": "mary_smith_002",
+      "name": "Outdoor Picnic Table",
+      "category": 8,
+      "price": 350.00,
+      "desc": "Classic picnic table with attached benches.",
+      "imageUrl": "Outdoor Picnic Table",
+      "stock": 9,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Durable Finish",
+        "Easy to Clean"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "DeskChair_7_u9i0o1p",
+      "sellerID": "david_martin_008",
+      "name": "Desk Chair",
+      "category": 7,
+      "price": 110.00,
+      "desc": "Standard chair for use at a desk.",
+      "imageUrl": "Desk Chair",
+      "stock": 28,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Ergonomic Support",
+        "Durable Finish",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "TwinBedwithStorage_5_a2s3d4f",
+      "sellerID": "aliouf_35322",
+      "name": "Twin Bed with Storage",
+      "category": 5,
+      "price": 350.00,
+      "desc": "Twin size bed with built-in storage drawers.",
+      "imageUrl": "Twin Bed with Storage",
+      "stock": 10,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Space Saving",
+        "Sturdy Construction"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "WallMountedShelves_6_g5h6j7k",
+      "sellerID": "mark_taylor_004",
+      "name": "Wall Mounted Shelves",
+      "category": 6,
+      "price": 55.00,
+      "desc": "Set of shelves that mount directly to the wall with no visible support.",
+      "imageUrl": "Wall Mounted Shelves",
+      "stock": 35,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "RectangleCoffeeTable_3_l8z9x0c",
+      "sellerID": "david_martin_008",
+      "name": "Rectangle Coffee Table",
+      "category": 3,
+      "price": 120.00,
+      "desc": "Classic rectangular coffee table.",
+      "imageUrl": "Rectangle Coffee Table",
+      "stock": 20,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Durable Finish",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "KidsDesk_7_v1b2n3m",
+      "sellerID": "aliouf_35322",
+      "name": "Kids Desk",
+      "category": 7,
+      "price": 80.00,
+      "desc": "Small desk sized for children.",
+      "imageUrl": "Kids Desk",
+      "stock": 18,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Easy Assembly",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "PlatformBed_5_q4w5e6r",
+      "sellerID": "mary_smith_002",
+      "name": "Platform Bed",
+      "category": 5,
+      "price": 350.00,
+      "desc": "Simple low-profile bed frame for a mattress.",
+      "imageUrl": "Platform Bed",
+      "stock": 15,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Sturdy Construction",
+        "Easy Assembly",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OfficeCabinet_6_t7y8u9i",
+      "sellerID": "david_martin_008",
+      "name": "Office Cabinet",
+      "category": 6,
+      "price": 150.00,
+      "desc": "Cabinet for storing office supplies.",
+      "imageUrl": "Office Cabinet",
+      "stock": 19,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Durable Finish",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "SectionalwithChaise_4_o0p1a2s",
+      "sellerID": "aliouf_35322",
+      "name": "Sectional with Chaise",
+      "category": 4,
+      "price": 1000.00,
+      "desc": "Sectional sofa including a chaise lounge extension.",
+      "imageUrl":"Sectional with Chaise",
+      "stock": 6,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Modular Design",
+        "Stylish Design"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OttomanwithStorage_3_d3f4g5h",
+      "sellerID": "mary_smith_002",
+      "name": "Ottoman with Storage",
+      "category": 3,
+      "price": 100.00,
+      "desc": "Upholstered ottoman with a lift-off lid for storage.",
+      "imageUrl":  "Ottoman with Storage",
+      "stock": 22,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Integrated Storage",
+        "Multi-functional",
+        "Stylish Design"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "CaliforniaKingBed_5_j6k7l8z",
+      "sellerID": "david_martin_008",
+      "name": "California King Bed",
+      "category": 5,
+      "price": 750.00,
+      "desc": "Larger bed size, longer and narrower than standard king.",
+      "imageUrl": "California King Bed",
+      "stock": 4,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Sturdy Construction",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "ConsoleTable_3_x9c0v1b",
+      "sellerID": "aliouf_35322",
+      "name": "Console Table",
+      "category": 3,
+      "price": 140.00,
+      "desc": "Narrow table typically used in hallways or behind sofas.",
+      "imageUrl":"Console Table",
+      "stock": 18,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorAccentChair_8_n2m3q4w",
+      "sellerID": "mary_smith_002",
+      "name": "Outdoor Accent Chair",
+      "category": 8,
+      "price": 150.00,
+      "desc": "Decorative chair for outdoor patio areas.",
+      "imageUrl": "Outdoor Accent Chair",
+      "stock": 14,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "PullOutSofa_2_e5r6t7y",
+      "sellerID": "michael_clark_006",
+      "name": "Pull Out Sofa",
+      "category": 2,
+      "price": 550.00,
+      "desc": "Sofa that converts into a bed by pulling out a mattress.",
+      "imageUrl":  "Pull Out Sofa",
+      "stock": 8,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Multi-functional",
+        "Space Saving",
+        "Comfortable Cushioning"
+      ],
+      "instructions": "Refer to the user manual for setup.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "LadderBookshelf_6_u8i9o0p",
+      "sellerID": "aliouf_35322",
+      "name": "Ladder Bookshelf",
+      "category": 6,
+      "price": 130.00,
+      "desc": "Bookshelf designed to lean against a wall like a ladder.",
+      "imageUrl": "Ladder Bookshelf",
+      "stock": 20,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Space Saving",
+        "Stylish Design",
+        "Easy Assembly"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "AdjustableStool_1_a1s2d3f",
+      "sellerID": "mary_smith_002",
+      "name": "Adjustable Stool",
+      "category": 1,
+      "price": 60.00,
+      "desc": "Stool with adjustable height for various uses.",
+      "imageUrl":"Adjustable Stool",
+      "stock": 32,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Adjustable Features",
+        "Multi-functional",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OfficeChairwithWheels_7_g4h5j6k",
+      "sellerID": "david_martin_008",
+      "name": "Office Chair with Wheels",
+      "category": 7,
+      "price": 130.00,
+      "desc": "Standard office chair with casters for mobility.",
+      "imageUrl": "Office Chair with Wheels",
+      "stock": 26,
+      "featured": false,
+      "warranty": "2 Years Limited Warranty",
+      "highlights": [
+        "Ergonomic Support",
+        "Multi-functional",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "OutdoorCoffeeTableSet_8_l7z8x9c",
+      "sellerID": "aliouf_35322",
+      "name": "Outdoor Coffee Table Set",
+      "category": 8,
+      "price": 250.00,
+      "desc": "Set including a coffee table and matching smaller tables for outdoor.",
+      "imageUrl": "Outdoor Coffee Table Set",
+      "stock": 8,
+      "featured": false,
+      "warranty": "5 Year Structural Warranty",
+      "highlights": [
+        "Weather Resistant",
+        "Stylish Design",
+        "Durable Finish"
+      ],
+      "instructions": "Assembly required, instructions included.",
+      "reviews": [],
+      "isDeleted": false
+    },
+    {
+      "id": "KidsSofa_2_v0b1n2m",
+      "sellerID": 4,
+      "name": "Kids Sofa",
+      "category": 2,
+      "price": 100.00,
+      "desc": "Small sofa sized for children.",
+      "imageUrl": "Kids Sofa",
+      "stock": 15,
+      "featured": false,
+      "warranty": "1 Year Manufacturer Warranty",
+      "highlights": [
+        "Comfortable Cushioning",
+        "Stylish Design",
+        "Easy to Clean"
+      ],
+      "instructions": "Wipe clean with a damp cloth.",
+      "reviews": [],
+      "isDeleted": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div class="card mb-3 cart-item p-0 small">
+    <div class="row g-0 d-flex justify-content-around col-12 align-items-center">
+        <div class="col-5 d-flex justify-content-center align-items-center">
+            <a class="col-12"><img class="col-12 img-fluid rounded-3" src="../assets/images/banner.jpeg" style="max-height: 30vh; " alt="Product"></a>
+        </div>
+        <div class="col-7">
+            <div class="card-body py-0">
+                <a><h5 class="card-title mb-1 prod-name"></h5></a>
+                <p class="card-text text-muted mb-2 prod-desc"></p>
+                <p class="card-text fw-bold text-primary">
+                    <span class="fas fa-dollar-sign"></span><span id="prod-price"></span>
+                </p>
+
+                <div class="d-flex align-items-center quantity-container" >
+                    <button type="button" class="decreaseQuantityBtn btn btn-outline-secondary btn-sm me-2">−</button>
+                    <span class ="quantity"></span>
+                    <button class="increaseQuantityBtn btn btn-outline-secondary btn-sm ms-2">+</button>
+                    <button type="button" class="delete-card-btn bi bi-trash btn btn-link text-danger ms-auto" >
+                    </button>
+                    <span class="d-none stock"></span>
+                </div>
+                <div> <span class="small">Stock: <span class="stock-display"></span></span></div>
+            </div>
+        </div>
+    </div>
+</div>

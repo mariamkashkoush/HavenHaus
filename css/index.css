@@ -1,0 +1,88 @@
+/***** home-page banner *****/ 
+
+.hero-section {
+  position: relative; 
+  width: 100%;
+  color: white; 
+  overflow: hidden; 
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/banner.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: 1; 
+}
+
+.hero-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2; 
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 3; 
+}
+
+.hero-content {
+ 
+  max-width: 1000px; 
+}
+
+
+/***** End home-page main-section *****/
+
+
+
+/***** home page services section *****/ 
+
+.services{
+  background-color: var(--bg-color-2);
+}
+
+.service-icon{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:#2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: all 2s ease;
+  margin-bottom: 20px;
+}
+.service-icon:hover{
+  transform: scale(1.2)rotate(360deg);
+}
+/***** End home page featured section *****/
+
+
+
+/***** home page category section *****/ 
+
+.category .card,.features .card{
+  transition: all 0.5s ease-in-out;
+}
+.category .card img, .features .card img{
+  max-height: 200px !important;
+}
+.category .card:hover, .features .card:hover{
+  transform: scale(1.1);
+}
+
+/***** End home page category section *****/
+
+

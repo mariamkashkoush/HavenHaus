@@ -1,0 +1,130 @@
+{
+  "user": [
+    {
+      "id": "3ssam",
+      "firstName": "Essam",
+      "lastName": "Admin",
+      "email": "3ssam@admin.com",
+      "password": "121212",
+      "role": "0",
+      "phone": "201207751489"
+    },
+    {
+      "id": "3ssam_seller",
+      "firstName": "Essam",
+      "lastName": "Seller",
+      "email": "3ssam@seller.com",
+      "password": "121212",
+      "role": "1",
+      "phone": "201207751489"
+    },
+    {
+      "id": "3ssam_customer",
+      "firstName": "Essam",
+      "lastName": "User",
+      "email": "3ssam@user.com",
+      "password": "121212",
+      "role": "2",
+      "phone": "201207751489"
+    },
+    {
+      "id": "aliouf_3532",
+      "firstName": "Ali",
+      "lastName": "Ouf",
+      "email": "admin@example.com",
+      "password": "pass123",
+      "role": "0",
+      "phone": "201207751489"
+    },
+    {
+      "id": "aliouf_35322",
+      "firstName": "Ali",
+      "lastName": "Ouf",
+      "email": "ali@example.com",
+      "password": "pass123",
+      "role": "1",
+      "phone": "201207751489"
+    },
+    {
+      "id": "david_martin_008",
+      "firstName": "David",
+      "lastName": "Martin",
+      "email": "david@example.com",
+      "password": "password08",
+      "role": "1",
+      "phone": "201234567897"
+    },
+    {
+      "id": "mary_smith_002",
+      "firstName": "Mary",
+      "lastName": "Smith",
+      "email": "mary@example.com",
+      "password": "password02",
+      "role": "1",
+      "phone": "201234567891"
+    },
+    {
+      "id": "mark_taylor_004",
+      "firstName": "Mark",
+      "lastName": "Taylor",
+      "email": "mark@example.com",
+      "password": "password04",
+      "role": "1",
+      "phone": "201234567893"
+    },
+    {
+      "id": "michael_clark_006",
+      "firstName": "Michael",
+      "lastName": "Clark",
+      "email": "michael@example.com",
+      "password": "password06",
+      "role": "1",
+      "phone": "201234567895"
+    },
+    {
+      "id": "john_doe_001",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@example.com",
+      "password": "password01",
+      "role": "2",
+      "phone": "201234567890"
+    },
+    {
+      "id": "jane_doe_003",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane@example.com",
+      "password": "password03",
+      "role": "2",
+      "phone": "201234567892"
+    },
+    {
+      "id": "susan_james_005",
+      "firstName": "Susan",
+      "lastName": "James",
+      "email": "susan@example.com",
+      "password": "password05",
+      "role": "2",
+      "phone": "201234567894"
+    },
+    {
+      "id": "lucy_brown_007",
+      "firstName": "Lucy",
+      "lastName": "Brown",
+      "email": "lucy@example.com",
+      "password": "password07",
+      "role": "2",
+      "phone": "201234567896"
+    },
+    {
+      "id": "emma_wilson_009",
+      "firstName": "Emma",
+      "lastName": "Wilson",
+      "email": "emma@example.com",
+      "password": "password09",
+      "role": "2",
+      "phone": "201234567898"
+    }
+  ]
+}

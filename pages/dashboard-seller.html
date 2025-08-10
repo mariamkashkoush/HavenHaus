@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../js/load_db.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/confirm-modal.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/order-status.css">
+    <!-- JS Scripts -->
+    <script src="../js/dashboard/seller-dashboad.js" type="module"></script>
+    <script src="../js/dashboard/seller-orders-list.js" type="module"></script>
+
+    <script type="module" src="/js/dashboard/seller-product.js"></script>
+
+    <!-- Chart.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- Custom CSS -->
+    <style>
+        .transition-fast {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .transition-medium {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .transition-slow {
+            transition: all 4s ease-in-out;
+        }
+
+        * {
+
+            font-size: 1rem !important;
+            box-sizing: border-box;
+        }
+
+        table,
+        tbody,
+        thead,
+        tr {
+            font-size: 0.8rem !important;
+        }
+        /* tr .order-status {
+            font-size: 0.9rem !important;
+        } */
+
+        tr>*,
+        td>* {
+            min-height: 10px !important;
+            /* max-height: 1rem; */
+            overflow: hidden !important;
+            /* font-size: 4rem !important; */
+        }
+
+        .min-vh-10 {
+            min-height: 10vh !important;
+        }
+
+        .min-vh-15 {
+            min-height: 15vh !important;
+        }
+
+        .min-vh-25 {
+            min-height: 25vh !important;
+        }
+
+        .min-vh-50 {
+            min-height: 50vh !important;
+        }
+
+        .min-vh-75 {
+            min-height: 75vh !important;
+        }
+
+        .max-vh-25 {
+            max-height: 25vh !important;
+        }
+
+        .max-vh-50 {
+            max-height: 50vh !important;
+        }
+
+        .max-vh-75 {
+            max-height: 75vh !important;
+        }
+        
+        .max-vh-100 {
+            max-height: 100vh !important;
+        }
+        
+
+        .dashboard-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh !important;
+            transition: all 0.3s;
+            background-color: #444459;
+        }
+
+        .main-content {
+            flex: 1;
+            transition: all 0.5s;
+        }
+
+        @media (max-width: 992px) {
+            .sidebar {
+                margin-left: -250px;
+                position: sticky;
+            }
+
+            .sidebar.active {
+                margin-left: 0;
+            }
+
+            .main-content.active {
+                margin-left: 250px;
+            }
+        }
+
+        .status-badge {
+            min-width: 80px;
+        }
+
+        .tab-content {
+            padding: 20px;
+            background-color: #fff;
+            border-left: 1px solid #dee2e6;
+            border-right: 1px solid #aaadb1;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .card-stat {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .invalid {
+            border-color: #dc3545 !important;
+        }
+        #sidebar{
+            background-color: rgb(33, 37, 41) !important;
+            background-color: #1F1F2E !important;
+        }
+        #products table tr a{
+            transition: all 0.2s !important;
+            /* font-size: xx-large !important; */
+            display: inline-block;
+
+        }
+        #products table tr a:hover{
+            transform: scale(1.07) !important;
+        }
+        .side-item:hover{
+            background-color:lightskyblue;
+            background-color:#8E44AD;
+            /* border: 2px solid lightskyblue; */
+            border-radius: 10px;
+            
+        }
+
+        thead{
+            background-color: #6A0DAD !important;
+        }
+        thead th{
+            background: transparent !important;
+            color: white !important;    
+        }
+        td{
+            border: 1px;
+        }
+        .order-status *{
+            margin: 0;
+        }
+        #orders-table-body tr td{
+        }
+    </style>
+
+</head>
+
+<body class="overflow-y-hidden d-flex">
+
+    <div class="dashboard-container container-fluid m-0 p-0 d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="collapse collapse-horizontal d-lg-block text-white ">
+            <div class="sidebar-header align-self-start p-3">
+                <h3 class="fs-6 d-flex flex-column gap-3"><i class="fas fa-store me-2"></i><span class="d-none d-md-inline-block">Seller Dashboard</span></h3>
+            </div>
+            <hr class="col-10 mx-auto">
+            <ul class="nav flex-column gap-2 justify-content-center justify-content-sm-start" id="dashboardTabs" role="tablist">
+                <li class="nav-item side-item" role="presentation">
+                    <a class="nav-link active text-white" id="dashboard-tab" data-bs-toggle="tab" href="#dashboard" role="tab">
+                        <i class="fas fa-tachometer-alt me-2"></i><span class="d-none d-md-inline ">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item side-item" role="presentation">
+                    <a class="nav-link text-white" id="products-tab" data-bs-toggle="tab" href="#products" role="tab">
+                        <i class="fas fa-boxes me-2"></i><span class="d-none d-md-inline">Products</span>
+                    </a>
+                </li>
+                <li class="nav-item side-item" role="presentation">
+                    <a class="nav-link text-white   " id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab">
+                        <i class="fas fa-shopping-cart me-2 "></i><span class="d-none d-md-inline">Orders</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="analytics-tab" data-bs-toggle="tab" href="#analytics" role="tab">
+                        <i class="fas fa-chart-line me-2"></i>Analytics
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content container-fluid overflow-y-scroll max-vh-100">
+            <!-- Top Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="btn btn-dark d-lg-none" id="sidebarToggle" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar" aria-expanded="true" aria-controls="sidebar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="navbar-nav ms-auto">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="fas fa-user-circle me-1"></i> <span id="selllerName" class="text-wrap">seller Name</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="profile.html"><i
+                                            class="fas fa-user me-2"></i>Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li id="logoutBtn"><a class="dropdown-item" href="#"><i
+                                            class="fas fa-sign-out-alt me-2"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Dashboard Content -->
+            <div class="tab-content col-12" id="dashboardTabsContent">
+                <!-- Dashboard Tab -->
+                <div class="tab-pane fade show active col-12" id="dashboard" role="tabpanel">
+                    <h1 class="mb-4"> <i class="bi bi-speedometer"></i> Dashboard Overview</h1>
+                    <div class="row d-flex justify-content-between">
+
+                        <div class="col-12 col-sm-5 col-xl-3 mb-2">
+                            <div class="card card-stat bg-success text-dark">
+                                
+                                <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h5 class="card-title small">Total Revenue</h5>
+                                        <h4 class="text-white">$<span id="total-revenue"></span></h4>
+                                    </div>
+                                    <div>
+                                        <span><i class="bi bi-currency-exchange fs-1"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" mb-2 col-12 col-sm-5 col-xl-3 ">
+                            <div class="card card-stat bg-warning text-white">
+                                    
+                                    <div class="card-body stats-box text-white d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="card-title small">Total Products</h5>
+                                            <h4 id="total-products">0</h4>
+                                        </div>
+                                        <div>
+                                            <span><i class="bi bi-dropbox fs-1"></i></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5 col-xl-3 mb-2">
+                            <div class="card card-stat bg-primary text-white">
+                                    
+                                    <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="card-title small">Total Orders</h5>
+                                            <h4 id="total-orders">0</h4>
+                                        </div>
+                                        <div>
+                                            <span><i class="bi bi-card-checklist fs-1"></i></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5 col-xl-3 mb-2">
+                            <div class="card card-stat  bg-danger  ">
+                                <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                    <div>                                       
+                                        <h5 class="card-title small">Total Sold Units</h5>
+                                        <h4 class="text-white"><span id="total-sold-units"></span></h4>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa fa-chart-simple fs-1 "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-4 mb-2">
+                            <div class="card card-stat bg-info text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title small">Pending Orders</h5>
+                                    <h2 id="pending-orders">0</h2>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                    <hr class="my-4">
+                    <div class="row d-flex">
+                        <div class="col-sm-12 col-lg-8 fs-5  ">
+                            <div class="card">
+                                <!-- <div class="card-header">
+                                </div> -->
+                                <div
+                                    class="card-header nav nav-tabs d-flex flex-column flex-sm-row justify-content-center justify-content-lg-center">
+                                    <h6 class="col-12 text-center py-1 small text-secondary">Sales Analytics</h6>
+                                    <div class="nav-item text-center ">
+                                        <button id="daily-sales" class="nav-link col-12 col-sm-auto small"
+                                            aria-selected="true"><span class="h3 small">Daily Sales</span></button>
+                                    </div>
+                                    <div class="nav-item text-center">
+                                        <button id="monthly-sales" class="nav-link col-12 col-sm-auto"
+                                            aria-selected="true"><span class="h3 small">Monthly Sales</span></button>
+                                    </div>
+                                    <div class="nav-item ">
+                                        <button id="yearly-sales" class="nav-link col-12 col-sm-auto "
+                                            aria-selected="true"><span class="h3 small">Yearly Sales</span></button>
+                                    </div>
+                                </div>
+                                <div class="card-body col-11 col-md-12 min-vh-50 max-vh-50">
+                                    <canvas id="salesChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  mt-3">
+                            <div class="col-12 mb-2">
+                                <div class="card card-stat bg-info text-white">
+                                    <div class="card-body text-white d-flex justify-content-between align-items-center">
+                                        <div>                                       
+                                            <h5 class="card-title small">Pending Orders</h5>
+                                            <h4 id="pending-orders">0</h4>
+                                        </div>
+                                        <div>
+                                            <span><i class="bi bi-clock fs-1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card-header nav nav-tabs d-flex flex-column flex-sm-row justify-content-center justify-content-lg-center">
+                                <div class="nav-item text-center col-12  col-sm-6 col-md-6">
+                                    <button id="recent-orders-btn" class="nav-link col-12  small active"
+                                        data-bs-toggle="tab" data-bs-target="#recent-orders" aria-selected="true"
+                                        aria-controls="recent-orders" role="tab">
+                                        <span class="h3 small">Recent orders</span>
+                                    </button>
+                                </div>
+                                <div class="nav-item text-center col-12 col-sm-6 col-md-6">
+                                    <button id="best-selling-btn" class="nav-link col-12  small" data-bs-toggle="tab"
+                                        data-bs-target="#best-selling" aria-selected="false"
+                                        aria-controls="best-selling" role="tab"><span class="h3 small">Best
+                                            Selling</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="tab-content">
+                                    <div id="recent-orders" class="card tab-pane active">
+                                        <!-- <div class="card-header ">
+                                            <h5>Recent Orders</h5>
+                                        </div> -->
+                                        <div class="card-body p-1">
+                                            <div class="list-group p-0">
+                                                <!-- Recent orders will be populated here -->
+                                                <a href="#recent-orders"
+                                                    class="list-group-item py-3 border rounded mb-2 shadow-sm">
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center  flex-lg-column flex-xl-row">
+                                                        <div class="align-self-start">
+                                                            <h6 class="mb-1 fw-bold ">Order #<span
+                                                                    class="order-id">123456</span></h6>
+                                                            <p class="mb-1 text-muted small order-date"> April 25, 2025
+                                                            </p>
+                                                        </div>
+                                                        <span
+                                                            class="badge bg-success align-self-start order-status">Completed</span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-lg-column flex-xl-row justify-content-between mt-2">
+                                                        <div class="text-muted small">
+                                                            <span class="order-item-count">3 </span>items
+                                                        </div>
+                                                        <div class="fw-semibold ">
+                                                            $<span class="order-cost">89.99</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="best-selling" class="card tab-pane  col-12">
+                                        <div class="card-header ">
+                                            <!-- <h5>Best Selling</h5> -->
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="list-group p-0">
+                                                <!-- best selling will be populated here -->
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Tab -->
+                <div class="tab-pane fade" id="products" role="tabpanel">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                        <h2><i class="fas fa-boxes me-2"></i><span class="text-break">Product Management</span></h2>
+                        <button class="btn btn-success" id="addProductBtn">
+                            <i class="fas fa-plus me-2"></i><span class="text-break">Add Product</span>
+                        </button>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead id="products_id"> <!--add id-->
+                                        <tr>
+                                            <!-- <th>ID</th> -->
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Stock</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="products-table">
+                                        <!-- Products will be populated here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orders Tab -->
+                <div class="tab-pane fade col-12" id="orders" role="tabpanel">
+                    <div class="d-flex flex-column justify-content-between align-items-md-center flex-sm-row ">
+                        <h2 class="mb-4"> <i class="bi bi-check2-square"></i> <span class="text-wrap text-break">Order Management</span></h2>
+                        <div>
+                            <select id="filter-order-status" name="filter-order-status" class="form-select">
+                                <option value="-1">All</option>
+                                <option value="1">Accepted</option>
+                                <option value="0">pending</option>
+                                <option value="2">Rejected</option>
+                                <option value="3">Suppressed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card col-12">
+                        <div class="card-body col-12 ">
+                            <div class="table-responsive col-12">
+                                <table
+                                    class="table  overflow-x-auto table-hover table-bordered align-middle text-center">
+                                    <thead class="table-light col-12  text-light">
+                                        <tr class="bg-transparent">
+                                            <th class="bg-transparent text-light">Product name</th>
+                                            <th class="bg-transparent text-light">Product ID</th>
+                                            <th class="bg-transparent text-light">Date</th>
+                                            <th class="bg-transparent text-light">Status</th>
+                                            <th class="bg-transparent text-light">Amount</th>
+                                            <th class="bg-transparent text-light">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="orders-table-body">
+                                        <!-- Orders will be populated here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Analytics Tab -->
+                <div class="tab-pane fade" id="analytics" role="tabpanel">
+                    <h2 class="mb-4">Sales Analytics</h2>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <!-- <div class="card-header nav nav-tabs d-flex justify-content-between">
+                                    <div class="nav-item">
+                                        <button id="daily-sales" class="nav-link"><h5>Daily Sales</h5></button>
+                                    </div>
+                                    <div class="nav-item">
+                                        <button id="monthly-sales" class="nav-link"><h5>Monthly Sales</h5></button>
+                                    </div>
+                                    <div class="nav-item">
+                                        <button id="yearly-sales" class="nav-link"><h5>Yearly Sales</h5></button>
+                                    </div>
+                                </div> -->
+                                <div class="card-body">
+                                    <canvas id="monthlySalesChart" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Top Selling Products</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group" id="top-products">
+                                        <!-- Top products will be populated here -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Product Delete Confirmation Modal -->
+    <!-- <div class="modal fade min-vh-100" id="deleteModal" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body min-vh-15 d-flex align-items-center">
+                    <h4>Are you sure you want to delete this product?</h4>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="modal fade min-vh-100 custom-delete-modal" id="deleteModal" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger fw-bold" id="deleteModalLabel">Confirm Deletion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body min-vh-15 d-flex align-items-center justify-content-center text-center">
+                    <h4 class="mb-0">Are you sure you want to delete this product?</h4>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger px-4" id="confirmDeleteBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade min-vh-100 custom-delete-modal" id="deleteModal" aria-labelledby="deleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content pop-effect shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger fw-bold" id="deleteModalLabel">Confirm Deletion <i
+                            class="bi bi-trash"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body min-vh-15 d-flex align-items-center justify-content-center text-center">
+                    <h4 class="mb-0">Are you sure you want to delete this product?</h4>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger px-4" id="confirmDeleteBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Order Accept  Modal  -->
+    <!-- <div class="modal" id="orderAcceptConfirmModal" aria-labelledby="orderAcceptConfirmModalLabel" tabindex="-1"
+        aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderAcceptConfirmModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This Will accept all items in this order, are you sure?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success " id="orderConfirmAcceptBtn">Accept All</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade transition-medium custom-order-modal" id="orderAcceptConfirmModal"
+        aria-labelledby="orderAcceptConfirmModalLabel" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content pop-effect shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-success fw-bold" id="orderAcceptConfirmModalLabel">Accept Order <i
+                            class="bi bi-check2-circle"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="fs-5 mb-0">This will accept all items in this order. Are you sure?</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success px-4" id="orderConfirmAcceptBtn">Accept All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Order Delete Confirmation Modal -->
+
+    <!-- <div class="modal transition-medium" id="orderDeleteConfirmModal" aria-labelledby="orderDeleteConfirmModalLabel" tabindex="-1"
+        aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderDeleteConfirmModalLabel">Rejcting Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This Will Totally reject the order, are you sure?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="orderConfirmDeleteBtn">Reject Order</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade transition-medium custom-order-modal" id="orderDeleteConfirmModal"
+        aria-labelledby="orderDeleteConfirmModalLabel" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content pop-effect shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger fw-bold" id="orderDeleteConfirmModalLabel">Rejecting Order <i
+                            class="bi bi-x-circle"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="fs-5 mb-0">This will permanently reject the order. Are you sure?</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger px-4" id="orderConfirmDeleteBtn">Reject Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Add/Edit Product Modal aria-hidden="true"> -->
+    <!-- <div class="modal fade transition-fast" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="productForm">
+                        <input type="hidden" id="productId" value="1234">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="productName" class="form-label">Product Name <span
+                                        style="color: #dc3545;">*</span></label>
+                                <input type="text" class="form-control" id="productName" name="productName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="productPrice" class="form-label">Price<span
+                                        style="color: #dc3545;">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input name="productPrice" type="number" min="1" step="0.1" oninput="validity.valid||(value='');"
+                                        class="form-control" id="productPrice" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="productStock" class="form-label">Stock Quantity<span
+                                        style="color: #dc3545;">*</span></label>
+                                <input name="stockQuantity" type="number" min="0" step="1" oninput="validity.valid||(value='');"
+                                    class="form-control" id="productStock" required>
+
+                            </div>
+                            <div class="col-md-6">
+                                <label for="productCategory" class="form-label">Category<span
+                                        style="color: #dc3545;">*</span></label>
+                                <select class="form-select" id="productCategory" aria-placeholder="selectCategory" required>
+                                    <option disabled >Select Category</option>
+                                    <option value="1">Chairs</option>
+                                    <option value="2">Sofas</option>
+                                    <option value="3">Tables</option>
+                                    <option value="4">Sectionals</option>
+                                    <option value="5">Beds</option>
+                                    <option value="6">Storage</option>
+                                    <option value="7">Office Furniture</option>
+                                    <option value="8">Outdoor Furniture</option>
+                                    <option value="9">Decor & Accessories</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="highlights" class="form-label">Highlights</label>
+                                <input type="text" class="form-control" id="highlights">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="instructions" class="form-label">Instructions</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="instructions">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="productDescription" rows="3"
+                                maxlength="100"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="image-input" class="form-label">Product Image</label>
+                                <div class="input-group">
+                                    <input required type="file" name="image-input" class="form-control" id="image-input" >
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <img src="" id="preview" style="max-height:30vh; max-width:30vw;"  alt="">
+                            </div>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" data-id="edit_product" class="btn btn-primary" id="saveProductBtn">Save
+                        Product</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="modal fade transition-fast custom-product-modal" id="productModal" tabindex="-1"
+        aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content pop-effect shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-primary" id="productModalLabel">Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="productForm">
+                        <input type="hidden" id="productId" value="1234">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="productName" class="form-label">Product Name <span
+                                        style="color: #dc3545;">*</span></label>
+                                <input type="text" class="form-control" id="productName" name="productName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="productPrice" class="form-label">Price<span
+                                        style="color: #dc3545;">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input name="productPrice" type="number" min="1" step="0.1"
+                                        oninput="validity.valid||(value='');" class="form-control" id="productPrice"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="productStock" class="form-label">Stock Quantity<span
+                                        style="color: #dc3545;">*</span></label>
+                                <input name="stockQuantity" type="number" min="0" step="1"
+                                    oninput="validity.valid||(value='');" class="form-control" id="productStock"
+                                    required>
+
+                            </div>
+                            <div class="col-md-6">
+                                <label for="productCategory" class="form-label">Category<span
+                                        style="color: #dc3545;">*</span></label>
+                                <select class="form-select" id="productCategory" aria-placeholder="selectCategory"
+                                    required>
+                                    <option disabled>Select Category</option>
+                                    <option value="1">Chairs</option>
+                                    <option value="2">Sofas</option>
+                                    <option value="3">Tables</option>
+                                    <option value="4">Sectionals</option>
+                                    <option value="5">Beds</option>
+                                    <option value="6">Storage</option>
+                                    <option value="7">Office Furniture</option>
+                                    <option value="8">Outdoor Furniture</option>
+                                    <option value="9">Decor & Accessories</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="highlights" class="form-label">Highlights</label>
+                                <input type="text" class="form-control" id="highlights">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="instructions" class="form-label">Instructions</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="instructions">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="productDescription" rows="3"
+                                    maxlength="100"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="image-input" class="form-label">Product Image</label>
+                                <div class="input-group">
+                                    <input required type="file" name="image-input" class="form-control"
+                                        id="image-input">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <img src="" id="preview" style="max-height:30vh; max-width:30vw;" alt="">
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 justify-content-end">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" data-id="edit_product" class="btn btn-primary px-4" id="saveProductBtn">Save
+                        Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <script src="../js/dashboard/seller-dashboad.js" type="module"></script> -->
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+
+
+
+
+</body>
+
+</html>

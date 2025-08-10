@@ -1,0 +1,28 @@
+<div class="offcanvas offcanvas-end col-11 col-md-7 col-4" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
+  <div id="total-price-holder" data-total-price="{}" class="d-none"></div>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartCanvasLabel">Shopping Cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div id="empty" class="col-12 d-none flex-column justify-content-center align-items-center p-5 m-auto gap-3 ">
+    <span class="fs-4 text-break text-wrap m-auto">Your Cart is empty.</span>
+    <span class="fs-6 text-break text-wrap  ">Add some!</span>
+    <a href="#" class="btn d-block btn-primary align-self-center col-12  m-auto ">Go to shop</a>
+  </div>
+  <div id="" class="offcanvas-body">
+    <div id="main-container">
+      <div id="cart-items-container">
+
+      </div>
+      <!-- Total -->
+  
+      <div id="total-price-container" class="d-flex justify-content-between align-items-center flex-column gap-3 mt-4">
+        <span class="cart-total align-self-start">Total:  <p class="fs-5 m-0  fw-bold text-primary d-inline-block">$<span class="cart-total" id="total-price"></span></p></span>
+       
+    
+        <button class="btn btn-primary w-100 mt-3 btn-go-to-cart">Go to Cart</button>
+    
+      </div>
+    </div>
+  </div>
+</div>

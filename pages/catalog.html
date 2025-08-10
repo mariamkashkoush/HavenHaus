@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- <script type="module">
+
+    import {Navbar} from "../js/componentModules/navbar.js"
+    await Navbar.renderNavbar();
+  </script> -->
+  <!-- <script type="module" src="../js/searchCatalog.js"></script> -->
+   <script src="../js/pages/catalog.js" type="module" defer></script>
+
+
+  <style>
+    
+  </style>
+</head>
+<body class="bg-light">
+  <!-- Navigation Bar -->
+  <div id="navbar"></div>
+
+  <div id="createProductCards" class="container py-4">
+    <!-- Header -->
+    <div class=" row align-items-center g-3 mb-4">
+       <!-- Header H2 -->
+        <div class="col-12 col-md-12 col-lg-3">
+          <h2 class="fw-bold m-0">Our Collection</h2>
+        </div>
+    
+        <!-- search -->
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="input-group">
+            <span class="input-group-text bg-white"><i class="fas fa-search text-muted"></i></span>
+            <input type="text" class="form-control" placeholder="Search products...">
+          </div>
+        </div>
+    
+        <!-- Dropdown: All Products -->
+        <div class="col-12 col-md-4 col-lg-3">
+          <select class="form-select">
+            <option value="all" selected>All Products</option>    <!--add value="all rawan "-->
+            <option value=1 >Chairs</option>
+            <option value=2 >Sofas</option>
+            <option value=3>Tables</option>
+            <option value=4>Sectionals</option>
+            <option value=5>Beds</option>
+            <option value=6>Storage</option>
+            <option value=7>Office Furniture</option>
+            <option value=8>Outdoor Furniture</option>
+            <option value=9>Decor & Accessories</option>
+            
+          </select>
+        </div>
+    
+        <!-- Dropdown: Featured -->
+        <div class="col-12 col-md-4 col-lg-3">
+          <select id="priceFilter" class="form-select">   <!-- add id rawan -->
+            <option selected value="latest">Latest</option>
+            <option value="featured">Featured</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+    <!-- Product Cards -->
+    <div id="cards-container" class="row d-flex justify-content-center gap-5 my-5">
+                    
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- <script type="module" src="../js/main.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--only add this rawan -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color:#E5F1FE;
+}
+.account-container {
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(6, 74, 174, 0.25);
+}
+.form-icon {
+  position: absolute;
+  top: 60%;
+  right: 1rem;
+  color: #6c757d;
+}
+.toggle-password {
+right: 2.5rem;
+cursor: pointer;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-reveal {
+display: none;
+}
+input[type="password"]::-ms-clear {
+display: none;
+}

@@ -1,0 +1,482 @@
+
+:root {
+    --primary: #0d6efd;
+    --secondary: #ff8787;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --success: #4cc9f0;
+}
+
+
+
+body {
+    
+    background-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, #ff6b6b 100%);
+    color: white;
+    padding: 80px 0;
+   
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+
+
+
+/* Server-Client communication animation container */
+.communication-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+}
+
+/* Server and client icons */
+.server, .client {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.server {
+    background-color: #f1f3f5;
+    top: 40px;
+    left: 60px;
+    animation: pulse 2s infinite;
+}
+
+.client {
+    background-color: #e9ecef;
+    top: 40px;
+    right: 60px;
+    animation: pulse 2s infinite;
+    animation-delay: 1s;
+}
+
+.server-icon, .client-icon {
+    font-size: 40px;
+    color: var(--primary);
+}
+
+/* Server and client labels */
+.label {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.server-label {
+    top: 150px;
+    left: 60px;
+}
+
+.client-label {
+    top: 150px;
+    right: 60px;
+}
+
+/* Connection line */
+.connection-line {
+    position: absolute;
+    top: 89px;
+    left: 160px;
+    right: 160px;
+    height: 2px;
+    background-color: #ced4da;
+    z-index: 1;
+}
+
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.message-bubble {
+    
+    padding: 1rem;
+    
+    position: relative;
+}
+
+.message-agent {
+    background-color: #f0f7ff;
+    border-top-left-radius: 0;
+}
+
+
+.message-name {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+
+
+.form-container {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 850px;
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0d6efd;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #212529;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    background-color: #ffffff;
+}
+
+.btn-custom {
+    background-color: #0d6efd;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #084298;
+}
+
+
+
+/* Form data packet animation */
+        .form-data {
+            position: absolute;
+            top: 75px;
+            right: 155px;
+            width: 20px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid var(--primary);
+            border-radius: 3px;
+            animation: sendFormData 3s infinite;
+            transform-origin: center;
+            opacity: 0;
+            z-index: 5;
+        }
+        
+        .form-data-line {
+            height: 2px;
+            background-color: var(--primary);
+            margin-bottom: 2px;
+        }
+        
+        /* Response data packet animation */
+        .response-data {
+            position: absolute;
+            top: 75px;
+            left: 155px;
+            width: 20px;
+            height: 30px;
+            background-color: var(--primary);
+            border-radius: 3px;
+            animation: sendResponseData 3s infinite;
+            animation-delay: 1.5s;
+            transform-origin: center;
+            opacity: 0;
+            z-index: 5;
+        }
+        
+        .response-data::before, .response-data::after {
+            content: "";
+            position: absolute;
+            width: 70%;
+            height: 2px;
+            background-color: white;
+            left: 15%;
+            top: 30%;
+        }
+        
+        .response-data::after {
+            top: 60%;
+        }
+
+
+
+         /* Form with input fields */
+         .form-ui {
+            position: absolute;
+            top: 190px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            opacity: 0;
+            animation: showForm 1s forwards;
+            animation-delay: 0.5s;
+        }
+        
+        .form-input {
+            width: 100%;
+            height: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+        
+        .form-button {
+            width: 40%;
+            height: 15px;
+            margin-left: auto;
+            margin-top: 5px;
+            background-color: var(--primary);
+            border-radius: 4px;
+        }
+
+
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+    }
+}
+
+/* Form data animation */
+@keyframes sendFormData {
+    0% {
+        right: 155px;
+        transform: scale(1) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        right: calc(100% - 155px - 20px);
+        transform: scale(1) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Response data animation */
+@keyframes sendResponseData {
+    0% {
+        left: 155px;
+        transform: scale(1) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: calc(100% - 155px - 20px);
+        transform: scale(1) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Show form animation */
+@keyframes showForm {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* Status indicator dots */
+.status-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #adb5bd;
+}
+
+.status-dot.active {
+    background-color: var(--success);
+}
+
+.dot-1 {
+    top: 40px;
+    right: 180px;
+    animation: activateDot 3s infinite;
+    animation-delay: 0.2s;
+}
+
+.dot-2 {
+    top: 60px;
+    right: 180px;
+    animation: activateDot 3s infinite;
+    animation-delay: 0.5s;
+}
+
+.dot-3 {
+    top: 80px;
+    right: 180px;
+    animation: activateDot 3s infinite;
+    animation-delay: 0.8s;
+}
+
+.dot-4 {
+    top: 40px;
+    left: 180px;
+    animation: activateDot 3s infinite;
+    animation-delay: 2s;
+}
+
+.dot-5 {
+    top: 60px;
+    left: 180px;
+    animation: activateDot 3s infinite;
+    animation-delay: 2.3s;
+}
+
+.dot-6 {
+    top: 80px;
+    left: 180px;
+    animation: activateDot 3s infinite;
+    animation-delay: 2.6s;
+}
+
+@keyframes activateDot {
+    0%, 100% {
+        background-color: #adb5bd;
+        transform: scale(1);
+    }
+    50% {
+        background-color: var(--success);
+        transform: scale(1.5);
+    }
+}
+
+/* General site styles */
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+
+
+.filter-container {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.filter-panel {
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+.filter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter-label {
+    margin-right: 12px;
+    font-weight: 500;
+    color: #374151;
+}
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.filter-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.filter-btn.active {
+    background-color: #2563eb;
+    color: white;
+}
+.filter-btn:not(.active) {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+.filter-btn:not(.active):hover {
+    background-color: #e5e7eb;
+}
+

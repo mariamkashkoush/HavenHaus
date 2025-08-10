@@ -1,0 +1,80 @@
+<nav class="mynav navbar navbar-expand-md shadow sticky-top navbar-light bg-light">
+    <div class="container mx-auto">
+      
+        <a class="navbar-brand text-primary fw-bold fs-3" href="../index.html">HavenHaus</a>
+
+ 
+        <div class="d-flex d-md-none order-md-3 mx-auto justify-content-center flex-grow-1">
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+                <a class="nav-link position-relative" href="#" title="Cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" aria-controls="cartCanvas">
+                    <i class="nav-icon fas fa-cart-shopping fs-5"></i>
+                    <span id="cart-badge" class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">2</span>
+                </a>
+                <!-- <a class="nav-link" href="#" title="Wishlist">
+                    <i class="nav-icon fa-regular fa-heart fs-5"></i>
+                </a> -->
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="mobileNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Account">
+                        <i class="fa-regular fa-user fs-5"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="mobileNavbarDropdown">
+                        <li><h6 class="dropdown-header username-placeholder"></h6></li>
+                        <li><a class="dropdown-item profile-link" href="#">My Account</a></li>
+                        <li id="support-link"><a class="dropdown-item" href="../pages/support.html">Support</a></li>
+                        <li id="admin-dash" class="nav-item d-none"><a class="dropdown-item " href="../pages/Admin.html">Dashboard</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="logout-link dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto d-flex justify-content-center gap-md-2 text-center align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item fs-5" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item fs-5" href="../pages/catalog.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item fs-5" href="../index.html#category-section">Our Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-item fs-5" href="../pages/about.html">About Us</a>
+                </li>
+               
+            </ul>
+        </div>
+
+        
+        <div class="d-none d-md-flex align-items-center justify-content-center gap-4">
+            <a class="nav-link position-relative" href="#" title="Cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" aria-controls="cartCanvas">
+                <i class="nav-icon fas fa-cart-shopping fs-5"></i>
+                <span id="cart-badge" class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">2</span>
+            </a>
+            <!-- <a class="nav-link" href="#" title="Wishlist">
+                <i class="nav-icon fa-regular fa-heart fs-5"></i>
+            </a> -->
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" id="desktopNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Account">
+                    <i class="fa-regular fa-user fs-5"></i>
+                    <span id="username" class="username-placeholder"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="desktopNavbarDropdown">
+                    <li><a class="dropdown-item profile-link" href="#">My Account</a></li>
+                    <li id="support-link"><a class="dropdown-item" href="../pages/support.html">Support</a></li>
+                    <li id="admin-dash" class="nav-item d-none"><a class="dropdown-item " href="../pages/Admin.html">Dashboard</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="logout-link dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

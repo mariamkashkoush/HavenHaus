@@ -1,0 +1,26 @@
+.min-h-screen{
+    min-height: 100vh;
+}               
+.favorite{
+    color: rgb(220 53 69) !important;
+}
+
+#product-image{
+    box-shadow: 0rem 0.6rem 1rem gray;
+
+}
+
+#product-image:hover{
+    box-shadow: 0rem 1rem 1rem gray;
+}
+
+#product-image, .favorite-icon, #back-to-shop{
+    transition: all 0.3s;
+}   
+#product-image:hover,.favorite-icon:hover{
+    transform:  scale(1.02);
+}
+#back-to-shop:hover{
+    transform: translate(0,-0.1rem);
+    box-shadow: 0rem 1rem 1rem lightblue;
+}

@@ -1,0 +1,43 @@
+body{
+    background-color: #f9fafb;
+}
+
+span{
+    display: inline-block;
+}
+
+input[name]{
+    padding: 10px !important;
+}
+
+input[name]:focus{
+    border: 2px solid #0d6efd !important;
+    box-shadow: none !important;
+}
+
+#back, .checkout-button{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 15px;
+    padding-left: 0 !important;
+    line-height: 5px;
+}
+
+#back:hover{
+    border-bottom: 1px solid #0d6efd;
+}
+
+#checkoutform, #checkoutsummary{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: #00000010 3px 3px 5px, #00000010 -3px -3px 5px;
+}
+
+#checkoutsummary{
+    height: fit-content;
+}
+
+#ccard{
+    background-color: #f9fafb;
+}

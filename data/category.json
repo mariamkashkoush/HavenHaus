@@ -1,0 +1,13 @@
+{
+  "category": [
+    { "id": 1, "name": "Chairs", "description": "A diverse selection of chairs including dining chairs, office chairs, and accent seating for all spaces." },
+    { "id": 2, "name": "Sofas", "description": "Comfortable sofas designed for relaxation, including traditional, modern, and luxury styles." },
+    { "id": 3, "name": "Tables", "description": "Functional and stylish tables including coffee tables, dining tables, side tables, and console tables." },
+    { "id": 4, "name": "Sectionals", "description": "Spacious sectional sofas perfect for large living areas, offering modular configurations and comfort." },
+    { "id": 5, "name": "Beds", "description": "Premium beds crafted for style and sleep quality, including frames, headboards, and full sets." },
+    { "id": 6, "name": "Storage", "description": "Organizational furniture such as cabinets, shelves, and storage benches for every room." },
+    { "id": 7, "name": "Office Furniture", "description": "Ergonomic and professional-grade office furniture designed for productivity and support." },
+    { "id": 8, "name": "Outdoor Furniture", "description": "Weather-resistant furniture for patios, gardens, and balconies, offering comfort and durability." },
+    { "id": 9, "name": "Decor & Accessories", "description": "Enhance your space with decorative items including rugs, lamps, wall art, and accents." }
+  ]
+}
